@@ -15,13 +15,13 @@ def check_holiday():
 
         # Validating if the date entered is a US holiday
         if input_date in us_holidays:
-            # If the date entered is a holiday, this pop up message will appear
+            # If the date entered is a holiday, this message will appear
             holiday_msg.set(f"This date is a holiday: {us_holidays[input_date]}")
         else:
-            # If the date entered is not a holiday, this pop up message will appear
+            # If the date entered is not a holiday, this message will appear
             holiday_msg.set("This date is not a holiday. Try a different date")
     except ValueError:
-        # Invalid date entries will return this popup message
+        # Invalid date entries will return this message
         holiday_msg.set("Enter a valid date (Format: MM/DD)")
 
 

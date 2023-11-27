@@ -46,9 +46,9 @@ entry1 = tk.Entry(window, textvariable=date_var)
 check_button = tk.Button(window, text="Is it a holiday?", command=check_holiday)
 
 # Placing and positioning for labels, entry field, and button using grid layout
-date_label.grid(row=0,column=0, pady=10)
-entry1.grid(row=0, column=1, pady=10)
-check_button.grid(row=2,column=0,columnspan=2, pady=15)
+date_label.grid(row=0,column=0,pady=15,padx=7)
+entry1.grid(row=0, column=1,pady=15)
+check_button.grid(row=2,column=0,columnspan=2,pady=15)
 
 # Run the main event loop
 window.mainloop()

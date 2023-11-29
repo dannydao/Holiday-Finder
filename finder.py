@@ -5,7 +5,18 @@ import holidays
 us_holidays = holidays.US()
 
 # Function to check if the date entered is a US holiday
-def check_holiday(date_string):
+def check_holiday(date_string: str) -> str:
+    """
+    Checks if the date that is inputted corresponds to a U.S. holiday.
+
+    Args:
+    - date_string (str): Date string in the format 'MM/DD'.
+
+    Returns:
+    - str: Message indicating if the date inputted is a U.S holiday or not. Also
+    if the input were to be an error it would indicate to enter a valid date.
+
+    """
     try:
         # Parsing input date string into a datetime object (Month and Day only)
         input_date = datetime.strptime(date_string, "%m/%d")

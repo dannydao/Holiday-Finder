@@ -10,7 +10,14 @@ window.geometry("275x150")
 window.resizable(False, False)
 
 # Function to check holiday
-def check_holiday():
+def check_holiday() -> None:
+    """
+    Checks for a holiday based on the entered date and returns a message accordingly.
+
+    Returns:
+    - None
+
+    """
     date_string = date_var.get()
     result = hc.check_holiday(date_string)
     holiday_msg.set(result)
